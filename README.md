@@ -1,33 +1,71 @@
-# 📋 تو دو لیست (Todo List)
+# 📋 Todo List
 
-یک اپلیکیشن ساده برای مدیریت کارها و تسک‌ها با طراحی مدرن و رابط کاربری زیبا.  
-شما می‌توانید تسک‌ها را اضافه، حذف، و وضعیت آن‌ها را تغییر دهید.
-
----
-
-## ⚡ ویژگی‌ها
-
-- ایجاد تسک جدید
-- حذف تسک‌ها
-- نمایش تسک‌ها به صورت کامل یا تکمیل شده
-- رابط کاربری جذاب و واکنش‌گرا
-- مدال پاپ‌آپ برای اضافه کردن تسک
-- مدیریت وضعیت تسک‌ها با رنگ و استایل
+A simple, modern, and user-friendly application for managing daily tasks and to-do items.  
+With this project, you can add, delete, and update the status of your tasks.  
+The design is clean and minimal, focusing on a smooth user experience.
 
 ---
 
-## 🎬 دمو
+## ⚡ Features
 
-می‌توانید فیلم نحوه کارکرد پروژه را اینجا مشاهده کنید:  
-[لینک فیلم](/public/img/Screen%20Recording%202025-10-22%20100508.mp4) 
-
-![اسکرین‌شات 1](public/img/Screenshot%202025-10-22%20100013.png)  
-![اسکرین‌شات 2](public/img/Screenshot%202025-10-22%20100126.png)
+- Add new tasks
+- Delete tasks
+- Mark tasks as **completed** or **in progress**
+- Manage and display tasks based on their status
+- Modern and **responsive** user interface
+- Modal (popup) for adding new tasks
+- Task status management using colors and styles
 
 ---
 
-## 💻 نصب و استفاده
+## 🎬 Demo & Preview
 
-1. پروژه را کلون کنید:  
+🎥 Watch the demo video:  
+[Watch Demo](/public/img/Screen%20Recording%202025-10-22%20100508.mp4)
+
+📸 Screenshots:
+
+![Screenshot 1](public/img/Screenshot%202025-10-22%20100013.png)  
+![Screenshot 2](public/img/Screenshot%202025-10-22%20100126.png)
+
+---
+
+🛠️ Built With
+
+HTML
+
+CSS (Tailwind CSS)
+
+JavaScript (Vanilla JS)
+
+---
+
+📌 About the Project
+
+This project is a practical exercise to improve JavaScript skills and DOM manipulation.
+The main focus is on:
+
+User interaction and UI behavior
+
+Task state management
+
+Clean and simple logic
+
+Modern and minimal design
+
+---
+
+👨‍💻 Developer
+
+Mohammad
+Frontend Developer 🚀
+
+---
+
+## 💻 Installation & Usage
+
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/00mohammad/Todo_list.git
+```

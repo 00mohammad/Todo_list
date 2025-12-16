@@ -17,42 +17,31 @@ function hideModal() {
 function addTodo() {
   const newTodoTitle = todoInput.value;
 
-  let articlesElem = document.createElement("article");
-  articlesElem.className = "todo";
-
-  const todoDataDiv = document.createElement("div");
-  todoDataDiv.className = "todo-data";
-
-  const todoTitleElem = document.createElement("p");
-  todoTitleElem.innerHTML = newTodoTitle;
-
-  const todoButtonsDiv = document.createElement("div");
-  todoButtonsDiv.className = "todo-buttons";
-
-  const removeTodoBtn = document.createElement("button");
-  removeTodoBtn.innerHTML = "حذف";
-  removeTodoBtn.className = "delete";
-
-  removeTodoBtn.addEventListener("click", function (event) {
-    const mainTodoparent = event.target.parentElement.parentElement;
-    mainTodoparent.remove();
-  });
-
-  todoButtonsDiv.append(removeTodoBtn);
-  todoDataDiv.append(todoTitleElem);
-  articlesElem.append(todoDataDiv);
-  articlesElem.append(todoButtonsDiv);
-
-  todosContainer.append(articlesElem);
+  todosContainer.insertAdjacentHTML(
+    "beforeend",
+    `<article class="todo">
+      <div class="todo-data">
+        <p>${newTodoTitle}</p>
+      </div>
+      <div class="todo-buttons" onclick="removeTodo(event)">
+        <button class="delete">حذف</button>
+      </div>
+    </article>`
+  );
 
   hideModal();
   todoInput.value = "";
+}
+
+function removeTodo(event) {
+  event.target.parentElement.parentElement.remove();
 }
 
 openModalButton.addEventListener("click", showModal);
 cancelBtn.addEventListener("click", hideModal);
 closeModalX.addEventListener("click", hideModal);
 createTodoBtn.addEventListener("click", addTodo);
+
 document.body.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     hideModal();
